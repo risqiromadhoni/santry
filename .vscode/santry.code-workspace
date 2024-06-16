@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "../"
+    },
+    {
+      "name": "web",
+      "path": "../packages/web"
+    },
+    {
+      "name": "desktop",
+      "path": "../packages/desktop"
+    },
+    {
+      "name": "mobile",
+      "path": "../packages/mobiles"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/node_modules": true,
+      "**/packages": true
+    }
+  }
+}

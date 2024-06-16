@@ -1,0 +1,36 @@
+{
+  "name": "santry",
+  "description": "Prayer reminder app for Muslims run in any devices",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Risqi Romadhoni",
+    "email": "risqi.romadhoni96@gmail.com",
+    "url": "https://risqiromadhoni.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/risqiromadhoni/santry"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "bun run --cwd packages/web dev",
+    "ios": "bun run --cwd packages/mobile ios",
+    "android": "bun run --cwd packages/mobile android",
+    "desktop": "bun run --cwd packages/desktop tr:dev",
+    "format": "biome format .",
+    "lint": "biome lint .",
+    "ci": "biome ci . && installed-check --no-include-workspace-root --ignore-dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
