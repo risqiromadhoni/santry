@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import type React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -30,7 +30,7 @@ type SectionProps = PropsWithChildren<{
 }>;
 
 function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = false;
   return (
     <View style={styles.sectionContainer}>
       <Text
