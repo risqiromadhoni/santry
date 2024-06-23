@@ -19,10 +19,13 @@
   ],
   "scripts": {
     "web": "bun run --cwd packages/web dev",
-    "mb:start": "bun run --cwd packages/mobiles start",
-    "mb:ios": "bun run --cwd packages/mobiles ios",
-    "mb:android": "bun run --cwd packages/mobiles android",
     "desktop": "bun run --cwd packages/desktop tr:dev",
+    "rn:start": "bun run --cwd packages/mobiles start",
+    "rn:ios": "bun run --cwd packages/mobiles ios",
+    "rn:android": "bun run --cwd packages/mobiles android",
+    "expo:start": "bun run --cwd packages/mobile-expo start",
+    "expo:ios": "bun run --cwd packages/mobile-expo ios",
+    "expo:android": "bun run --cwd packages/mobile-expo android",
     "format": "biome format .",
     "lint": "biome lint .",
     "ci": "biome ci . && installed-check --no-include-workspace-root --ignore-dev"

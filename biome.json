@@ -4,6 +4,7 @@
 		"ignore": [
 			"**/node_modules/**",
 			"**/.astro/**",
+			"**/.expo/**",
 			"**/dist/**",
 			"**/build/**",
 			"**/package.json",
@@ -26,15 +27,15 @@
 	},
 	"overrides": [
 		{
-      "include": ["*.astro"],
-      "linter": {
-        "rules": {
-          "correctness": {
-            "noUnusedVariables": "off",
-            "noUnusedImports": "off"
-          }
-        }
-      }
-    }
+			"include": ["*.astro"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedVariables": "off",
+						"noUnusedImports": "off"
+					}
+				}
+			}
+		}
 	]
 }
